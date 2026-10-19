@@ -1,7 +1,4 @@
-# TechStore — refatoracao SOLID simplificada
-
-Projeto mantido proximo ao original: JavaScript CommonJS (`require`, `module.exports`), sem framework, sem Factory e sem classes extras para cada tipo de pagamento.
-
+# TechStore — refatoracao SOLID 
 ## Executar
 
 ```bash
