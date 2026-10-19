@@ -9,8 +9,6 @@ npm start
 npm test
 ```
 
-Nao exige `npm install`, pois utiliza apenas Node.js (20+).
-
 ## Como ler (em ordem)
 
 1. `src/index.js`: cria pedido e conecta dependencias.
@@ -30,9 +28,3 @@ Nao exige `npm install`, pois utiliza apenas Node.js (20+).
 - **D (DIP)**: as dependencias sao recebidas no construtor de OrderService; index.js monta as implementacoes. Os testes usam dublês para notificacoes e logger.
 - **Demeter**: `customer.getShippingRegion()` e `customer.getShippingAddress()` evitam acesso encadeado ao endereco na logica de frete e pedido.
 
-## Observacoes
-
-- Nao ha integracao real de pagamento, envio de e-mail ou banco de dados; o comportamento e simulado como no exercicio original.
-- O ZIP original nao trazia `NotificationService.js`; foi criado um simulador de notificacao por console.
-- Atualizacoes de estoque e salvamento sao em memoria, portanto nao ha transacao atomica entre eles.
-- O relatorio anterior descreve uma arquitetura mais detalhada e **nao deve ser entregue como se descrevesse esta versao**.
